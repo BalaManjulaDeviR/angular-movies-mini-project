@@ -1,10 +1,15 @@
 <div>
     <form [formGroup]="filterForm">
         <h4>Filters</h4>
-        <label for="title">Title </label>
-        <input id="title" type="text" formControlName="title" class="input-field"> &nbsp;
-        <label for="release-year">Release year </label>
-        <input id="release-year" type="number" formControlName="releaseYear" class="input-field">
+        <div>
+            <label for="title">Title : </label>
+            <input id="title" type="text" formControlName="title">
+        </div>
+        <br>
+        <div>
+            <label for="release-year">Release year : </label>
+            <input id="release-year" type="number" formControlName="releaseYear">
+        </div>
     </form>
 </div>
 
