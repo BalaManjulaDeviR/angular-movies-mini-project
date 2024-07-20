@@ -16,30 +16,13 @@
                 </div>
             </div>
         </div>
-        <div class="bottom-details">
+        <div>
             <div class="details-header">Details</div>
-            <div class="details-table">
-                <div class="row">
-                    <div class="left-col">Box Office</div>
-                    <div class="right-col">{{ movieDetailsData.box_office | currencyFormat}}</div>
-                </div>
-                <div class="row">
-                    <div class="left-col">Budget</div>
-                    <div class="right-col">{{movieDetailsData.budget | currencyFormat}}</div>
-                </div>
-                <div class="row">
-                    <div class="left-col">Duration</div>
-                    <div class="right-col">{{movieDetailsData.duration | duration}}</div>
-                </div>
-                <div class="row">
-                    <div class="left-col">Producers</div>
-                    <div class="right-col">{{getNamesData(movieDetailsData.producers)}}</div>
-                </div>
-                <div class="row last-row">
-                    <div class="left-col">Cinematographers</div>
-                    <div class="right-col">{{getNamesData(movieDetailsData.cinematographers)}}</div>
-                </div>
-            </div>
+            <div>Box Office - {{ movieDetailsData.box_office | currencyFormat}}</div>
+            <div>Budget - {{movieDetailsData.budget | currencyFormat}}</div>
+            <div>Duration - {{movieDetailsData.duration | duration}}</div>
+            <div>Producers - {{getNamesData(movieDetailsData.producers)}}</div>
+            <div>Cinematographers - {{getNamesData(movieDetailsData.cinematographers)}}</div>
         </div>
     </ng-container>
 

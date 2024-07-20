@@ -29,4 +29,6 @@
 .details-button {
     background-color: #aaaaaa;
     color: black;
+    border-radius: 2rem;
+    width: 70px;
 }
